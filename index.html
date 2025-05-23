@@ -5,21 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deia Ateliê - Serviços</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/carousel.css">
-  <link rel="stylesheet" href="css/modal.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <h1>Deia Ateliê</h1>
-      </div>
+<header>
+  <div class="container">
+    <div class="logo">
+      <h1>Deia Ateliê</h1>
+    </div>
       <nav>
         <ul>
-          <li><a href="index.html" class="active">Serviços</a></li>
-          <li><a href="profile.html" id="profile-link">Meu Perfil</a></li>
+          <li><a href="#" class="active">Serviços</a></li>
+          <li><a href="#" id="profile-link">Meu Perfil</a></li>
           <li><a href="#" id="login-btn">Entrar</a></li>
           <li><a href="#" id="admin-link"><i class="fas fa-lock"></i></a></li>
         </ul>
@@ -45,7 +43,6 @@
           </button>
           
           <div class="carousel" id="services-carousel">
-            <!-- Services will be populated from JavaScript -->
           </div>
           
           <button class="carousel-button next" id="next-button">
@@ -62,82 +59,6 @@
     </div>
   </footer>
 
-  <!-- Login Modal -->
-  <div class="modal" id="login-modal">
-    <div class="modal-content">
-      <span class="close-modal">&times;</span>
-      <h2>Entrar</h2>
-      <form id="login-form">
-        <div class="form-group">
-          <label for="login-email">Email</label>
-          <input type="email" id="login-email" required>
-        </div>
-        <div class="form-group">
-          <label for="login-password">Senha</label>
-          <input type="password" id="login-password" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Entrar</button>
-      </form>
-      <p>Não tem uma conta? <a href="#" id="register-link">Registre-se</a></p>
-    </div>
-  </div>
-
-  <!-- Register Modal -->
-  <div class="modal" id="register-modal">
-    <div class="modal-content">
-      <span class="close-modal">&times;</span>
-      <h2>Cadastrar</h2>
-      <form id="register-form">
-        <div class="form-group">
-          <label for="register-name">Nome Completo</label>
-          <input type="text" id="register-name" required>
-        </div>
-        <div class="form-group">
-          <label for="register-email">Email</label>
-          <input type="email" id="register-email" required>
-        </div>
-        <div class="form-group">
-          <label for="register-phone">Telefone</label>
-          <input type="tel" id="register-phone" required>
-        </div>
-        <div class="form-group">
-          <label for="register-password">Senha</label>
-          <input type="password" id="register-password" required>
-        </div>
-        <div class="form-group">
-          <label for="register-confirm-password">Confirmar Senha</label>
-          <input type="password" id="register-confirm-password" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
-      </form>
-      <p>Já tem uma conta? <a href="#" id="login-link">Entrar</a></p>
-    </div>
-  </div>
-
-  <!-- Schedule Modal -->
-  <div class="modal" id="schedule-modal">
-    <div class="modal-content">
-      <span class="close-modal">&times;</span>
-      <h2>Agendar Serviço</h2>
-      <h3 id="schedule-service-name"></h3>
-      <div class="schedule-container">
-        <div class="date-selection">
-          <h4>Selecione uma data</h4>
-          <div class="calendar" id="appointment-calendar"></div>
-        </div>
-        <div class="time-selection">
-          <h4>Horários disponíveis</h4>
-          <div class="time-slots" id="time-slots"></div>
-        </div>
-      </div>
-      <button id="confirm-appointment" class="btn btn-primary">Confirmar Agendamento</button>
-    </div>
-  </div>
-
-  <script src="js/data.js"></script>
-  <script src="js/auth.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/scheduling.js"></script>
-  <script src="js/main.js"></script>
+ 
 </body>
 </html>
